@@ -19,18 +19,21 @@ for ((i=0; ; i+=$step)); do
   fi <<< $contents
 done
 
-biber --tool -V --dieondatamodel tmp.bib && 
-cp tmp.bib all.bib &&
-bib2bib --no-comment -ob biosecurity-intelligence.bib -c 'keywords : "intel"' all.bib &&
-bib2bib --no-comment -ob citizen-science.bib -c 'keywords : "citizen"' all.bib &&
-bib2bib --no-comment -ob decision-making.bib -c 'keywords : "decision"' all.bib &&
-bib2bib --no-comment -ob expert-judgement.bib -c 'keywords : "expert"' all.bib &&
-bib2bib --no-comment -ob import-risk-analysis.bib -c 'keywords : "import"' all.bib &&
-bib2bib --no-comment -ob inspection-efficiency.bib -c 'keywords : "inspection"' all.bib &&
-bib2bib --no-comment -ob other.bib -c 'keywords : "other"' all.bib &&
-bib2bib --no-comment -ob post-border.bib -c 'keywords : "postborder"' all.bib &&
-bib2bib --no-comment -ob risk-communication.bib -c 'keywords : "communication"' all.bib &&
-bib2bib --no-comment -ob spatial-modelling.bib -c 'keywords : "spatial"' all.bib
+if biber --tool -V --dieondatamodel tmp.bib; then
+  # bib valid
+  cp tmp.bib all.bib &&
+  bib2bib --no-comment -ob biosecurity-intelligence.bib -c 'keywords : "intel"' all.bib &&
+  bib2bib --no-comment -ob citizen-science.bib -c 'keywords : "citizen"' all.bib &&
+  bib2bib --no-comment -ob decision-making.bib -c 'keywords : "decision"' all.bib &&
+  bib2bib --no-comment -ob expert-judgement.bib -c 'keywords : "expert"' all.bib &&
+  bib2bib --no-comment -ob import-risk-analysis.bib -c 'keywords : "import"' all.bib &&
+  bib2bib --no-comment -ob inspection-efficiency.bib -c 'keywords : "inspection"' all.bib &&
+  bib2bib --no-comment -ob other.bib -c 'keywords : "other"' all.bib &&
+  bib2bib --no-comment -ob post-border.bib -c 'keywords : "postborder"' all.bib &&
+  bib2bib --no-comment -ob risk-communication.bib -c 'keywords : "communication"' all.bib &&
+  bib2bib --no-comment -ob spatial-modelling.bib -c 'keywords : "spatial"' all.bib &&
+  git checkout tmp.bib.blg 
+fi
 
 # https://unix.stackexchange.com/a/155077/379832
 if output=$(git status --porcelain) && [ -n "$output" ]; then
