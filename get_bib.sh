@@ -10,14 +10,17 @@ for ((i=0; ; i+=$step)); do
     then
       if [[ $i == 0 ]]
         then
-          echo "$contents" | sudo tee all.bib > /dev/nul
+          echo "$contents" | sudo tee tmp.bib > /dev/nul
         else
-          echo "$contents" | sudo tee -a all.bib > /dev/nul
+          echo "$contents" | sudo tee -a tmp.bib > /dev/nul
       fi
     else
       break
   fi <<< $contents
 done
+
+biber --tool -V --dieondatamodel tmp.bib && 
+cp tmp.bib all.bib &&
 bib2bib --no-comment -ob biosecurity-intelligence.bib -c 'keywords : "intel"' all.bib &&
 bib2bib --no-comment -ob citizen-science.bib -c 'keywords : "citizen"' all.bib &&
 bib2bib --no-comment -ob decision-making.bib -c 'keywords : "decision"' all.bib &&
