@@ -1,12 +1,12 @@
 [0] Config.pm:302> INFO - This is Biber 2.9 running in TOOL mode
 [0] Config.pm:305> INFO - Logfile is 'tmp.bib.blg'
-[25] biber:313> INFO - === Tue Dec 10, 2019, 16:45:36
-[52] Biber.pm:4150> INFO - Looking for bibtex format file 'tmp.bib'
-[86] bibtex.pm:1468> INFO - LaTeX decoding ...
-[314] bibtex.pm:1294> INFO - Found BibTeX data source 'tmp.bib'
-[1174] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1175] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1175] Biber.pm:3809> INFO - Sorting list 'tool/global//global/global' of type 'entry' with template 'tool' and locale 'en_US'
-[1175] Biber.pm:3815> INFO - No sort tailoring available for locale 'en_US'
-[1215] bibtex.pm:348> INFO - Writing 'tmp_bibertool.bib' with encoding 'UTF-8'
-[1238] bibtex.pm:378> INFO - Output to tmp_bibertool.bib
+[26] biber:313> INFO - === Tue Dec 10, 2019, 17:00:12
+[53] Biber.pm:4150> INFO - Looking for bibtex format file 'tmp.bib'
+[87] bibtex.pm:1468> INFO - LaTeX decoding ...
+[315] bibtex.pm:1294> INFO - Found BibTeX data source 'tmp.bib'
+[1165] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1165] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1165] Biber.pm:3809> INFO - Sorting list 'tool/global//global/global' of type 'entry' with template 'tool' and locale 'en_US'
+[1166] Biber.pm:3815> INFO - No sort tailoring available for locale 'en_US'
+[1207] bibtex.pm:348> INFO - Writing 'tmp_bibertool.bib' with encoding 'UTF-8'
+[1230] bibtex.pm:378> INFO - Output to tmp_bibertool.bib
