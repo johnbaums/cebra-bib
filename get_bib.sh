@@ -28,3 +28,11 @@ bib2bib --no-comment -ob other.bib -c 'keywords : "other"' all.bib &&
 bib2bib --no-comment -ob post-border.bib -c 'keywords : "postborder"' all.bib &&
 bib2bib --no-comment -ob risk-communication.bib -c 'keywords : "communication"' all.bib &&
 bib2bib --no-comment -ob spatial-modelling.bib -c 'keywords : "spatial"' all.bib
+
+# https://unix.stackexchange.com/a/155077/379832
+if output=$(git status --porcelain) && [ -n "$output" ]; then
+  # Uncommitted changes
+  git commit -a -m "Update bib (cron job)" &&
+  git push
+fi
+
