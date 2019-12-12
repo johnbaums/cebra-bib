@@ -4,7 +4,6 @@
 cd /srv/shiny-server/cebra-overview/bib || exit
 step=100
 for ((i=0; ; i+=$step)); do
-  #contents=$(curl "https://api.zotero.org/groups/2254307/items?format=bibtex&limit=$step&start=$i")
   contents=$(curl "https://api.zotero.org/users/1338710/collections/Q4A9CU98/items?key=$1&limit=$step&start=$i&format=bibtex")
   if [ ${#contents} -gt 0 ]
     then
