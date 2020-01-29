@@ -40,5 +40,6 @@ if output=$(git status --porcelain) && [ -n "$output" ]; then
   # Uncommitted changes
   git commit -a -m "Update bib (cron job)" &&
   git push
+  rm tmp_bibertool.bib
 fi
 
