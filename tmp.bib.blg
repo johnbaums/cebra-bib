@@ -1,11 +1,11 @@
 [0] Config.pm:302> INFO - This is Biber 2.9 running in TOOL mode
 [0] Config.pm:305> INFO - Logfile is 'tmp.bib.blg'
-[20] biber:313> INFO - === Wed Jan 29, 2020, 12:00:17
+[20] biber:313> INFO - === Wed Jan 29, 2020, 13:00:15
 [43] Biber.pm:4150> INFO - Looking for bibtex format file 'tmp.bib'
-[75] bibtex.pm:1468> INFO - LaTeX decoding ...
-[407] bibtex.pm:1294> INFO - Found BibTeX data source 'tmp.bib'
-[421] Utils.pm:169> WARN - Duplicate entry key: 'hester_post-border_2012' in file 'tmp.bib', skipping ...
-[424] Utils.pm:169> WARN - Duplicate entry key: 'robinson_aqis_2009' in file 'tmp.bib', skipping ...
-[2317] Utils.pm:185> ERROR - Datamodel: Entry 'chee_principles_2015' (tmp.bib): Missing mandatory field 'editor'
-[2317] Biber.pm:110> INFO - WARNINGS: 2
-[2317] Biber.pm:114> INFO - ERRORS: 1
+[76] bibtex.pm:1468> INFO - LaTeX decoding ...
+[400] bibtex.pm:1294> INFO - Found BibTeX data source 'tmp.bib'
+[413] Utils.pm:169> WARN - Duplicate entry key: 'hester_post-border_2012' in file 'tmp.bib', skipping ...
+[416] Utils.pm:169> WARN - Duplicate entry key: 'robinson_aqis_2009' in file 'tmp.bib', skipping ...
+[2326] Utils.pm:185> ERROR - Datamodel: Entry 'chee_principles_2015' (tmp.bib): Missing mandatory field 'editor'
+[2326] Biber.pm:110> INFO - WARNINGS: 2
+[2326] Biber.pm:114> INFO - ERRORS: 1
