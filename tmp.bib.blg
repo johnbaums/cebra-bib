@@ -1,13 +1,10 @@
 [0] Config.pm:302> INFO - This is Biber 2.9 running in TOOL mode
 [0] Config.pm:305> INFO - Logfile is 'tmp.bib.blg'
-[21] biber:313> INFO - === Thu Jan 30, 2020, 16:36:12
-[44] Biber.pm:4150> INFO - Looking for bibtex format file 'tmp.bib'
-[83] bibtex.pm:1468> INFO - LaTeX decoding ...
-[565] bibtex.pm:1294> INFO - Found BibTeX data source 'tmp.bib'
-[587] Utils.pm:169> WARN - Duplicate entry key: 'carey_linguistic_2008' in file 'tmp.bib', skipping ...
-[587] Utils.pm:169> WARN - Duplicate entry key: 'colyvan_is_2008' in file 'tmp.bib', skipping ...
-[588] Utils.pm:169> WARN - Duplicate entry key: 'hester_post-border_2012' in file 'tmp.bib', skipping ...
-[592] Utils.pm:169> WARN - Duplicate entry key: 'robinson_aqis_2009' in file 'tmp.bib', skipping ...
-[3420] Utils.pm:185> ERROR - Datamodel: Entry 'mcbride_what_2011' (tmp.bib): Missing mandatory field 'editor'
-[3420] Biber.pm:110> INFO - WARNINGS: 4
-[3420] Biber.pm:114> INFO - ERRORS: 1
+[22] biber:313> INFO - === Wed Apr  1, 2020, 19:56:06
+[47] Biber.pm:4150> INFO - Looking for bibtex format file 'tmp.bib'
+[91] bibtex.pm:1468> INFO - LaTeX decoding ...
+[600] bibtex.pm:1294> INFO - Found BibTeX data source 'tmp.bib'
+[735] Utils.pm:169> WARN - Name "Hanea, A.M., Nane, G.F., Cooke, R.M." has too many commas: skipping name
+[3725] Utils.pm:185> ERROR - Datamodel: Entry 'hanea_integrating_2017' (tmp.bib): Missing mandatory field 'author'
+[3725] Biber.pm:110> INFO - WARNINGS: 1
+[3726] Biber.pm:114> INFO - ERRORS: 1
