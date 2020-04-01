@@ -19,7 +19,8 @@ for ((i=0; ; i+=$step)); do
   fi <<< $contents
 done
 
-if biber --tool -V --dieondatamodel tmp.bib; then
+# below, use local binary of biber v2.15 (dev), which has a fix for inproceedings requiring editor
+if ./biber --tool -V --dieondatamodel tmp.bib; then
   # bib valid
   cp tmp.bib all.bib &&
   bib2bib --no-comment -ob biosecurity-intelligence.bib -c 'keywords : "intel"' all.bib &&
